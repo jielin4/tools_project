@@ -1,2 +1,22 @@
-Yizheng Chen yc3536
-Jie Lin jl5242
+Tools for Analysis final project
+Description of method:
+Kid_safe: 
+  1. counted bad word in lyrics based on list of Curse words in file word/bad.
+  2.For songs without curse words, kid safe give a score 1.
+  3.For other songs, calculated the frequency of curse words and its median, upper 95% and lower 5% value.(Did not use min/max method to reduce the effect of outliers.)
+  4. Assign 0.5 to the median value and the for other scores, score=(frequency-median)/(upper-lower)+0.5
+Love/complexity :
+  1.counted bad word in lyrics based on list of words in file word/love (word/common).
+  2.For songs, calculated the frequency of curse words and its median, upper 95% and lower 5% value.(Did not use min/max method to reduce the effect of outliers.)
+  3. Assign 0.5 to the median value and the for other scores, score=(frequency-median)/(upper-lower)+0.5
+Length:
+  1.count the word number in lyrics
+  2.calculate its median, upper 95% and lower 5% value.(Did not use min/max method to reduce the effect of outliers.)
+  3.Assign 0.5 to the median value and the for other scores, score=(frequency-median)/(upper-lower)+0.5
+Mood:
+  1. count the positive/negative words in lyrics based on list of words in word/postive and word/negative.
+  2.Raw score= postive frequency-negative frequencey
+  3.calucate its median, upper 95% and lower 5% value
+  4.Assign 0.5 to the median value and the for other scores, score=(raw score-median)/(upper-lower)+0.5
+
+Member:Yizheng Chen yc3536 Jie Lin jl5242
