@@ -1,5 +1,7 @@
 Tools for Analysis final project
+
 Description of method:
+
 Kid_safe: 
   1. counted bad word in lyrics based on list of Curse words in file word/bad.
   2.For songs without curse words, kid safe give a score 1.
