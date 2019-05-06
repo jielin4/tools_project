@@ -4,26 +4,28 @@ import unittest
 
 
 class Test(unittest.TestCase):
-#id
+    # id
     def test_id(self):
         result = main.main_def()
         t_result = json.loads(s=result)
         ch = t_result["characterizations"]
         self.assertEqual(ch[3]["id"], 3)
-#singer
+# singer
 
     def test_singer(self):
         result = main.main_def()
         t_result = json.loads(s=result)
         ch = t_result["characterizations"]
         self.assertEqual(ch[3]["artist"], "Jeff Beck")
-#name
+# name
+
     def test_name(self):
         result = main.main_def()
         t_result = json.loads(s=result)
         ch = t_result["characterizations"]
         self.assertEqual(ch[3]["title"], "All Shook Up")
-#length
+# length
+
     def test_length(self):
         result = main.main_def()
         t_result = json.loads(s=result)
